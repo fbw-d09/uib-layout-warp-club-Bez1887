@@ -1,10 +1,11 @@
 * {
   box-sizing: border-box;
-  margin: 1px;
+  margin: 0;
   padding: 0;
+  transition: 0.5s;
 }
+
 nav {
-  position: fixed;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -16,7 +17,9 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+a:hover {
+  background-color: deepskyblue;
+}
 header nav ul {
   display: flex;
   justify-content: flex-start;
@@ -35,6 +38,7 @@ header nav ul {
 
 .rechts {
   border: 1px solid white;
+  text-decoration: none;
 
   font-style: oblique;
   background: red;
@@ -46,8 +50,6 @@ header nav ul {
   justify-content: flex-start;
   height: 100vh;
   width: 50vw;
-
-  justify-content: flex-start;
 }
 
 .bild2 {
@@ -63,11 +65,13 @@ section {
   justify-content: flex-start;
 }
 
-h1 {
+/* h1 {
   font-size: 160px;
+  margin-bottom: 40px;
 
   color: darkorchid;
   align-items: center;
   writing-mode: vertical-lr;
   position: absolute;
 }
+ */
